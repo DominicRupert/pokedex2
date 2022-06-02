@@ -8,7 +8,7 @@ function _draw(){
     let pokemons = ProxyState.pokemons;
     let template = '';
     pokemons.forEach(p => 
-        template += `<li onclick="app.monsController.getActivePokemon('${p.name}')">${p.name} </li>`);
+        template += `<h3 onclick="app.monsController.getActivePokemon('${p.name}')">${p.name} </h3>`);
     
     document.getElementById('pokemons').innerHTML = template;
 }

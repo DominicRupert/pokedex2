@@ -7,6 +7,7 @@ class AppState extends EventEmitter {
   /** @type {import('./Models/Pokemon').Pokemon[]} */
   pokemons=[]
   sBoxPokemon=[]
+  gameVersion = []
   activePokemon = {}
 }
 
