@@ -2,7 +2,7 @@ import { ProxyState } from "../AppState.js";
 import { Pokemon } from "../Models/Pokemon.js";
 
 const pokeApi = axios.create({
-  baseURL: "https://pokeapi.co/api/v2/pokemon/",
+  baseURL: "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=150",
   timeout: 5000,
 });
 class MonsService {

@@ -13,10 +13,12 @@ function _drawSbPoke() {
     }
   });
   document.getElementById("sbox-mon").innerHTML = template;
+
 }
 
 export class SbPokeController {
   constructor() {
+    
     console.log("loaded sbox controller");
     ProxyState.on("sBoxPokemon", _drawSbPoke);
     this.getBoxPokemon();
